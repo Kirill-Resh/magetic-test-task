@@ -62,7 +62,7 @@ class PrintGames:
             # create empty file with game_name as file name
             open('{category_name}/{game_id}'.format(category_name=game['game_category'],
                                                     game_id=game_id), 'w').close()
-        print(', '.join([game['game_name'] for game in self.games_data]))
+        print('\n, '.join([game['game_name'] for game in self.games_data]))
 
     def server_print(self):
         # i'm not a web dew so use only 1 way i know to create templates
